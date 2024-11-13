@@ -4,9 +4,9 @@ spring:
       on-profile: postgres
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/winelottery
-    password: multipass123
-    username: wineuser
+    url: ${SPRING_DATASOURCE_URL}
+    password:  ${SPRING_DATASOURCE_USERNAME}
+    username:  ${SPRING_DATASOURCE_USERNAME}
   jpa:
     show-sql: false
     properties:
